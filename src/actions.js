@@ -25,3 +25,10 @@ export const addBikes = (items)  => {
     payload: items
   }
 }
+
+export const changeBikeModel = (item)  => {
+  return {
+    type: "ADD_BIKES",
+    payload: item
+  }
+}

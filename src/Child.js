@@ -3,6 +3,10 @@ import {connect} from 'react-redux'
 
 class Child extends Component {
 
+  
+
+
+
   render() {
     console.log(this.props.items);
     
@@ -11,6 +15,9 @@ class Child extends Component {
         <h2>Here's the child.</h2>
         <ul>
         {this.props.items.cars.map((item, idx) => <li key={idx}>{item}</li>  )}
+        </ul>
+        <ul>
+        {this.props.items.bikes.map((item, idx) => <li key={idx}>{item.brand} - {item.model}</li>  )}
         </ul>
       </div>
     )
